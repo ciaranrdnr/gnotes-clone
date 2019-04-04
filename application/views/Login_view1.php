@@ -42,7 +42,7 @@
         }
 
         document.getElementById("error").innerHTML = text;
-
+q
       </script>
       <a class="signup" href="signup_controller">Sign up</a>
     </form>
