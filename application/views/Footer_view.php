@@ -1,7 +1,7 @@
 <footer class="footer">
 	<ul class="breadcrumb">
 	<li><a href="#">About Us</a></li>
-	<li><a href="#">Privacy Police</a></li>
+	<li><a href="#">Privacy Policy</a></li>
 	<li><a href="#">Term of Service</a></li>
 	<li><a href="#">Help</a></li>
 	</ul>

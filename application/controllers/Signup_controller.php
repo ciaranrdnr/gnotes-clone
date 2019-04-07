@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login_controller extends CI_Controller {
+class Signup_controller extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,6 +20,6 @@ class Login_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('Signup_controller');
+		$this->load->view('Signup_view');
 	}
 }
