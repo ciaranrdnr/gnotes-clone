@@ -1,4 +1,4 @@
-/*
+
 input, body {
     font-family : sans-serif,"PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei";
     font-size : 14px;
@@ -98,7 +98,7 @@ ul.download li{
     display: flex;
     position: relative;
     text-align: right;
-}*/
+}
 label{
     /* posisi alert dalam input form */
     position: absolute; 
