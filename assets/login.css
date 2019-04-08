@@ -1,6 +1,17 @@
-
+@font-face {
+    font-family: 'Helvetica Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica 55 Roman'), url('../fonts/Helvetica/HelveticaNeue-Roman.woff') format('woff');
+}
+@font-face {
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Light'), url('../fonts/Helvetica/HelveticaNeueLight.woff') format('woff');
+}
 input, body {
-    font-family : sans-serif,"PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei";
+    font-family : 'Helvetica Roman';
     font-size : 14px;
     line-height : 20px;
     text-decoration : none solid rgba(0, 0, 0, 0.85);
@@ -14,12 +25,15 @@ input, body {
 .forget{
     text-align: left;
     color: #00C28B;
-    left: 210px;
-    display: inherit;
-    left: 0px;
+    float: left;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+.action{
     padding: 0px 0px 30px 0px;
     margin-top: -5px;
-
+    display: block;
 }
 .forget:hover{
     color: #00C28B;
@@ -28,9 +42,9 @@ input, body {
 .dwnld{
     color:#A3A3A3;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-    margin-top: 20px;
+    font-family: 'Helvetica Light';
+    font-size: 13.5px;
+    
 }
 .dwnld:hover{
     text-decoration: none;
@@ -40,6 +54,7 @@ ul.download{
     padding: 20px;
     list-style: none;
     display: inline;
+
 }
 ul.download li{
     display: inline;

@@ -12,8 +12,6 @@
 </footer>
 <div id="update-browser"></div>
 	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
-	<script src="libs/Analytics.js"></script>
-	<script type="text/javascript" src="/app/script/user.fc096be747dd28a31c7a.js"></script>
 </body>
 
 </html>

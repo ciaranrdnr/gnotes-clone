@@ -1,6 +1,15 @@
+
+@font-face {
+  font-family: 'Helvetica Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Light'), url('../fonts/Helvetica/HelveticaNeueLight.woff') format('woff');
+}
 .footer {
     width: 100%;
     height: 144px;
+    font-size: 12px;
+    font-family: 'Helvetica Light';
     background-color: #F9FAFB;
     color: white;
     text-align: center;
@@ -28,8 +37,9 @@
   }
 
   .copyright{
-      color: #E0E1E1;
+      color: #BDBEBF;
       text-align: center;
       font-size: 14px;
       margin-top: -10px;
+    font-family: 'Helvetica Light'
   }

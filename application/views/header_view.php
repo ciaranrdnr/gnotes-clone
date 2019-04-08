@@ -13,6 +13,4 @@
 	<link href="/app/styles/user.3d33478c9ba9d0ee9adc434e960925a1.css" rel="stylesheet">
 	<title>Sign in - GNotes</title>
 </head>
-<!--[if lt IE 9 ]><link href="ie/style.css" rel="stylesheet"><script src="ie/index.js"></script><![endif]-->
-
 <body data-gr-c-s-loaded="true">
