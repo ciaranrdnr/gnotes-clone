@@ -42,7 +42,7 @@
   <button class="btn btn-lg btn-block btn" type="submit" style="">Sign Up</button>
 </form>
 <div class="Signin signin-center">
-      <a class="signin" href="<?=base_url(); ?>Login_view1">Back to sign in</a>
+      <a class="signin" href="<?=base_url(); ?>">Back to sign in</a>
 </div>
     <br>
     <ul class="download" style="">
