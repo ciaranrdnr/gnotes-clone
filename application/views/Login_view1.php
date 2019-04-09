@@ -36,7 +36,7 @@
   <button class="btn btn-lg btn-block btn" type="submit" style="">Sign in</button>
 </form>
 <div class="signup signup-center">
-      <a class="signup" href="<?=base_url(); ?>Signup_view">Sign up</a>
+      <a class="signup" href="<?=base_url('signup')?>">Sign up</a>
 </div>
     <ul class="download" style="">
         <li><a class="dwnld" href="" ><img src="<?= base_url('assets/andoroid.png')?>" width="4.5%" height="4%"> Android</a></li>

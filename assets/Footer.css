@@ -11,6 +11,7 @@
     font-size: 12px;
     font-family: 'Helvetica Light';
     background-color: #F9FAFB;
+    border: solid 1px #F0F0F0;
     color: white;
     text-align: center;
  }
@@ -23,7 +24,7 @@
   }
   ul.breadcrumb li {
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 30px;
   }
   ul.breadcrumb li+li:before {
@@ -39,7 +40,7 @@
   .copyright{
       color: #BDBEBF;
       text-align: center;
-      font-size: 14px;
+      font-size: 12px;
       margin-top: -10px;
     font-family: 'Helvetica Light'
   }

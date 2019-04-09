@@ -137,6 +137,6 @@ label{
 
 .btn:active {
     background-color: #009168;
-    box-shadow: none;
-    border: #00AA7A;
+    box-shadow: none!important;
+    border-color: #00AA7A!important;
 }
