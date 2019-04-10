@@ -13,9 +13,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body class="text-center" data-gr-c-s-loaded="true">
+
 <div class="user" style="">   
   <div class= "container" style="">
-     <form class="needs-validation" id="" novalidate>
+     <form action="<?=base_url('Login_controller/mLogin')?>" class="needs-validation" id="" novalidate>
       <img id="logo" src="<?=base_url('assets/logo.png')?>" width="119" height="26">
   <div class="">
     <div class="float-container">

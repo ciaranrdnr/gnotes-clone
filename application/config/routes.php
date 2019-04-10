@@ -53,6 +53,7 @@ $route['default_controller'] = 'Login_controller';
 $route['signup'] = 'Signup_controller';
 $route['about'] = 'Aboutus_controller';
 $route['privacy'] = 'privacy_controller';
+$route['all'] = 'All_controller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 

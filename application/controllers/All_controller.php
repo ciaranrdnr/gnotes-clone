@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login_controller extends CI_Controller {
+class All_controller extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,15 +20,6 @@ class Login_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('Login_view1');
-	}
-	// function logout(){
-	// 	$this->session->sess_destroy();
-	// 	redirect(base_url('login'));
-	// }
-
-	public function mLogin()
-	{
-		redirect('/all');
+		$this->load->view('All_view');
 	}
 }
