@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Light'), url('../fonts/Helvetica/HelveticaNeueLight.woff') format('woff');
+  }
+.user{
+    margin-top: 90px;
+    font-family: 'Helvetica Light';
+    font-size: 13.8px;
+    color: #757575;
+    margin-left: 100px;
+}
+.navbar{
+    background-color: #00C28B;
+    height: 56px;
+}
+.navbar-brand{
+    margin-left: 180px;
+    margin-top: -7px;
+}
+.signin, .signin:hover{
+    margin-right: 165px;
+    position: static;
+    color: white;
+    font-family: 'Helvetica Light';
+    font-size: 14px;
+}
+
+.co{
+    margin-left: 80px;
+    position: initial;
+    width: 100%;
+    left: 480px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.dwnld{
+    color:#A3A3A3;
+    text-decoration: none;
+    font-family: 'Helvetica Light';
+    font-size: 12px;
+    position: relative;
+    left: 380px;
+    margin-bottom: 50px;
+    
+}
+.dwnld:hover{
+    text-decoration: none;
+    color: #A3A3A3;
+}
+ul.download{
+    list-style: none;
+    display: inline;
+
+}
+ul.download li{
+    display: inline;
+    padding: 8px;
+}
+.g1, .g2, .g3{
+    margin-top: 50px;   
+    font-family: 'Helvetica Light';
+    font-size: 14px;
+    color: #757575;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+.g1, .g2{
+    border-right: solid 0.5px #E0E1E1;
+}
+.g1{
+    margin-left: 120px;
+}
+.get{
+    color: #757575;
+    text-decoration: none;
+}
+.get:hover{
+    color: #757575;
+    text-decoration: none;
+}
+.section{
+    width: 860px;
+    position: relative;
+    left: 80px;
+}
+.s{
+    margin-bottom: 70px;
+    pos
+}
+
+strong{
+    color: #00C28B;
+}
+h5{
+    color: #00C28B;
+    border-bottom: solid 1px;
+    font-size: 21px;
+}
