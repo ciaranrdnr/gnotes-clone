@@ -12,18 +12,58 @@
     z-index: 1;
     background-color: #F7F7F7;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 80px;
     border-right: #E0E1E1 solid 0.5px; 
+    
   }
-  
+  .name{
+      padding-left: 10px;
+      color: black;
+      font-family: 'Helvetica Light';
+  }
   .sidenav a {
-    padding: 6px 6px 6px 32px;
+    /* padding: 10px 0px 0px 10px; */
     text-decoration: none;
-    font-size: 25px;
+    font-size: 14px;
     color: #818181;
     display: block;
   }
-  
+  .all{
+    margin-top: 15px;
+    border-left: solid 2.5px #00AA7A;
+  }
+  .bgg{
+    font-size: 15px; 
+    font-family: 'Helvetica Light';
+    margin-left: 30px;
+    margin-top:10px;
+  }
+  .bggg{
+    font-size: 11.5px; 
+    font-family: 'Helvetica Light';
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+  .modal-content{
+    width:368px !important;
+  }
+  .ardown{
+    left: -45px !important;
+    top: -4px !important;
+    position: absolute;
+  }
+  .bisa{
+    margin-left: -40px;
+  }
+  .borderr{
+    height: 40px;
+    padding-left: 40px;
+  }
+  .borderr:hover{
+    background-color: #ededed;
+    
+    
+  }
   .sidenav a:hover {
     color: #f1f1f1;
   }
@@ -35,8 +75,6 @@
   .b2{
      border-left: #008862 solid 1px !important;
      margin-right: 2px;
-
-
   }
   .btn-group{
       left: 30px;
@@ -56,13 +94,16 @@
 .nav-link{
     color: white;
     font-family: 'Helvetica Light';
+    margin-top: -20px;
     font-size: 14px;
 }
+
 .nav-link:hover{
     color: white;
     
 }
-.dropdown-menu{
+.navbar-nav{
+    margin-right: -300px !important;
 }
 
 .navbar{
@@ -95,29 +136,7 @@
     margin-top: 70px;
     margin-bottom: 30px;
 }
-.dwnld{
-    color:#A3A3A3;
-    text-decoration: none;
-    font-family: 'Helvetica Light';
-    font-size: 12px;
-    position: relative;
-    left: 380px;
-    margin-bottom: 50px;
-    
-}
-.dwnld:hover{
-    text-decoration: none;
-    color: #A3A3A3;
-}
-ul.download{
-    list-style: none;
-    display: inline;
 
-}
-ul.download li{
-    display: inline;
-    padding: 8px;
-}
 .g1, .g2, .g3{
     margin-top: 50px;   
     font-family: 'Helvetica Light';
@@ -199,4 +218,8 @@ h6{
     display: none;
     text-align: center;
   }
-  
+  .navbar-nav .dropdown-menu {
+    position: absolute!important;
+    float: none;
+    
+}

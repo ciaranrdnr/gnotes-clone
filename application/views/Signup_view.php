@@ -13,20 +13,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body class="text-center" data-gr-c-s-loaded="true">
-
 <div class="user" style="">   
   <div class= "container" style="">
-     <form class="needs-validation" id="" novalidate>
+     <form class="needs-validation" action="<?=base_url();?>Auth_controller/proses_tambah" method="post" id="" novalidate>
       <img id="logo" src="<?=base_url('assets/logo.png')?>" width="119" height="26">
   <div class="">
     <div class="float-container">
-      <input type="Email" class="form-control" id="inputEmail" placeholder="Your email" required>
+      <input type="Email" class="form-control" name="Email" id="inputEmail" placeholder="Your email" required>
         <label class="invalid-feedback "for="inputEmail">Email Address can't be empty  </label>
     </div>
   </div>
   <div class="">
     <div class="float-container">
-      <input type="Password" class="form-control" id="inputPassword" placeholder="Password" required>
+      <input type="Password" class="form-control" name="Password" id="inputPassword" placeholder="Password" required>
       <label class="invalid-feedback" for="inputPassword"> Password can't be empty</label>
       
     </div>

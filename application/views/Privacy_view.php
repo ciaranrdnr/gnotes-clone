@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy -  Gnotes</title>
+    <title>Privacy Policy -  GNotes</title>
     <link rel="icon" href="<?=base_url('assets/gnotes.png') ?>" type="image/gif" sizes="20x20">
     <link rel="stylesheet" type="text/css" href="<?=base_url('assets/Privacy.css') ?>?ts=<?=time()?>">
     <link rel="stylesheet" type="text/css" href="<?=base_url('assets/Footer.css') ?>?ts=<?=time()?>">

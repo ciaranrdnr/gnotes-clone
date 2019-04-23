@@ -2,7 +2,7 @@
 	<ul class="breadcrumb">
 	<li><a href="<?=base_url('about')?>">About Us</a></li>
 	<li><a href="<?=base_url('privacy')?>">Privacy Policy</a></li>
-	<li><a href="<?=base_url('tos')?>">Term of Service</a></li>
+	<li><a href="<?=base_url('Tos')?>">Term of Service</a></li>
 	<li><a href="#">Help</a></li>
 	</ul>
 	<div class="copyright can-select"> @ 2019 GNotes Team </div>

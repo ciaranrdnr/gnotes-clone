@@ -20,6 +20,6 @@ class Tos_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('Tos_view');
+		$this->load->view('Tos');
 	}
 }

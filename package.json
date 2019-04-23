@@ -1,0 +1,23 @@
+{
+  "name": "tubesWebpro",
+  "version": "1.0.0",
+  "description": "What is CodeIgniter ###################",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciaranrdnr/WEBPRO1819_IF4110_CIARA_KELOMPOK5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciaranrdnr/WEBPRO1819_IF4110_CIARA_KELOMPOK5/issues"
+  },
+  "homepage": "https://ciaranrdnr.github.io/WEBPRO1819_IF4110_CIARA_KELOMPOK5#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

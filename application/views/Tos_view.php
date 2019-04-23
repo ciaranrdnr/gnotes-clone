@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Term of Service -  Gnotes</title>
+    <title>Term of Service -  GNotes</title>
     <link rel="icon" href="<?=base_url('assets/gnotes.png') ?>" type="image/gif" sizes="20x20">
     <link rel="stylesheet" type="text/css" href="<?=base_url('assets/Tos.css') ?>?ts=<?=time()?>">
     <link rel="stylesheet" type="text/css" href="<?=base_url('assets/Footer.css') ?>?ts=<?=time()?>">

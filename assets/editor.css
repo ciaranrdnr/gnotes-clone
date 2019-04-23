@@ -1,0 +1,27 @@
+.back{
+    border-radius:2px; 
+    color: #372020 !important;
+    margin-top:27px ;
+    display: absolute;
+    left:0px; 
+    background:none;
+}
+.addFolder{
+    font-size:12px; 
+    margin:10px 0px 0px 20px; 
+    display: absolute; 
+    top:10px;
+     color:#747474 !important;
+}
+.fileUpload{
+    margin-left: 430px;
+    display: absolute;
+    font-size: 16px;
+}
+.right{
+    color: #b2b2b2;
+    padding:9px;
+}
+.right:hover{
+    color: #7d7d7d;
+}
