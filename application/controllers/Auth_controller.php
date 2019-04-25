@@ -26,15 +26,19 @@ class Auth_Controller extends CI_Controller {
         ];
 
         $this->M_auth->simpan($data);
+        
+    }
+    public function all()
+    { 
+      if (empty($this->session->email)){
         redirect('Auth_Controller');
-    }
-    public function allcontrol()
-    {
-        $this->load->view('All_view');
-    }
+      }else{
+        redirect('All_Controller');
+      }
+  }
     public function new()
     {
-        $this->load->view('Newnote_view');
+        redirect('newnote_controller');
     }
     public function trash()
     {
@@ -47,7 +51,7 @@ class Auth_Controller extends CI_Controller {
                     'Password' => md5($this->input->post('Password'))
                 ];
         $this->M_auth->update($id,$item);
-        redirect('Auth_controller/allcontrol');
+        redirect('Auth_controller/all');
     }
 
     
@@ -65,17 +69,22 @@ class Auth_Controller extends CI_Controller {
           'email'=>$user->Email,  // Buat session username
         );
         $this->session->set_userdata($session); // Buat session sesuai $session
-        redirect('Auth_controller/allcontrol'); // Redirect ke halaman welcome
+        redirect('Auth_controller/all'); // Redirect ke halaman welcome
       }else{
         redirect('Auth_Controller');
 
       }
     }
   }
-  public function logout()
-  {
-      $this->load->logout();
-  }
+  // public function logout()
+  // {
+  //     $this->load->logout();
+  // }
+  	public function logout(){
+      $this->session->unset_userdata($session);
+		$this->session->sess_destroy($session);
+		redirect('Auth_controller');
+	}
 
 
 

@@ -29,25 +29,25 @@
                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" style="margin-top: -40px; "><?=$this->session->userdata('email')?><img src="<?=base_url('assets/account.png')?>" style="Height:36px!important; margin-left:10px;"></a>
                         <div class="dropdown-menu">
                             <?php 
-                            $rows = $this->db->query("SELECT * FROM tubes where email='".$this->session->email."'")->row_array();   
+                            $rows = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();   
                             ?>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal<?php echo "$rows[id]"; ?>">
                             Change password </a>
                             <a class="dropdown-item" href="#">Premium Account</a>
                             <a class="dropdown-item" href="#">Help</a>
-                            <a class="dropdown-item" href="#">Signout</a>
+                            <a class="dropdown-item" href="<?= base_url('')?>">Signout</a>
 
                         </div>
                 </li>
             </ul>
         </nav>
 <?php $this->load->view('Nav_view')?>
-<?php $this->load->view('Editor_view')?>
+<?php $this->load->view('Editor_view',array('data'=>$data))?>
 
   <div class="change">
           <!-- Modal -->
           <?php 
-            $rows = $this->db->query("SELECT * FROM tubes where email='".$this->session->email."'")->row_array();   
+            $rows = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();   
           ?>
         <div style="margin-top: 180px" class="modal fade" id="exampleModal<?php echo "$rows[id]"; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">

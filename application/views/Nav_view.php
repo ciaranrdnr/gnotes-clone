@@ -8,7 +8,7 @@
             <span class="caret"></span>
         </button>
         <div class="dropdown-menu ardown" >
-            <a class="dropdown-item" href="#">Note</a>
+            <a class="dropdown-item" href="<?= base_url();?>Auth_controller/allcontrol">Note</a>
             <a class="dropdown-item" href="#">Checklist</a>
             <hr>
             <a class="dropdown-item" href="#">Folder</a>
@@ -24,7 +24,7 @@
                 <ul> 
                     <li class="folder all">
                         <div class="borderr">
-                        <a href="#" atyle="">
+                        <a href="<?= base_url();?>Auth_controller/all" style="">
                         <img src="<?=base_url('assets/all.svg')?>" alt="">
                         <span class="name">All</span> </a>
                         </div>

@@ -6,7 +6,9 @@ class All_controller extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model('M_auth');
+		$this->load->model('M_auth');
+		$this->load->model('m_notes');
+		
     }
 	/**
 	 * Index Page for this controller.
@@ -25,6 +27,7 @@ class All_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('All_view');
+		$data['result'] = $this->m_notes->getAll();
+		$this->load->view('All_view',$data);
 	}
 }

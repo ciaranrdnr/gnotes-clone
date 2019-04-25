@@ -28,32 +28,45 @@
                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" style="margin-top: -40px; "><?=$this->session->userdata('email')?><img src="<?=base_url('assets/account.png')?>" style="Height:36px!important; margin-left:10px;"></a>
                         <div class="dropdown-menu">
                             <?php 
-                            $rows = $this->db->query("SELECT * FROM tubes where email='".$this->session->email."'")->row_array();   
+                            $rows = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();   
                             ?>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal<?php echo "$rows[id]"; ?>">
                             Change password </a>
                             <a class="dropdown-item" href="#">Premium Account</a>
                             <a class="dropdown-item" href="#">Help</a>
-                            <a class="dropdown-item" href="#">Signout</a>
+                            <a class="dropdown-item" href="<?= base_url('')?>Auth_controller/logout">Signout</a>
 
                         </div>
                 </li>
             </ul>
         </nav>
 <?php $this->load->view('Nav_view')?>
-  <div style="width:100%; height:100%; padding: 200px; background-color: white;">
+  <div class="<?php if(count($result) > 0) echo 'd-none'; ?>" style="width:100%; height:100%; padding: 200px; background-color: white;">
     <img class="bgr"src="<?= base_url('assets/bg.png')?>" alt="" style="margin-left:470px; margin-top:-30px;"> 
    <div style="margin-left: 420px; color: #747474;">
       <p class="bgg" style="">Haven't written anything yet.</p>   
       <p class="bggg">Click "New Note" to write something.</p>
+    </div>  
+  </div>
+<div class="card-columns"   style="width:100%; height:100%; padding: 100px 100px 100px 300px ">
+<?php foreach($result as $data) { ?>
+<a href="<?= base_url('newnote_controller/editnotes/'.$data->id_notes) ?>">
+<div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title"><?= $data->note ?></h5>
+      <p class="card-text"><?= $data->note ?></p>
+      <p class="card-text"><small class="text-muted"><?= $data->entry_date ?></small></p>
     </div>
-  
+  </div>
+  </a>  
+<?php } ?>
+
   </div>
 
   <div class="change">
           <!-- Modal -->
           <?php 
-            $rows = $this->db->query("SELECT * FROM tubes where email='".$this->session->email."'")->row_array();   
+            $rows = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();   
           ?>
         <div style="" class="modal fade" id="exampleModal<?php echo "$rows[id]"; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog " role="document">

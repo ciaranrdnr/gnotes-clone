@@ -6,7 +6,9 @@ class Newnote_controller extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model('M_auth');
+		$this->load->model('m_auth');
+		$this->load->model('m_notes');
+		
     }
 
 	/**
@@ -26,33 +28,39 @@ class Newnote_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('Newnote_view');
+		$data['data'] = null;
+		$this->load->view('Newnote_view', $data);
 	}
 	
+	public function editNotes($id){
+		$data['data'] = $this->m_notes->getById($id);
+		$this->load->view('Newnote_view',$data);
+	}
+	public function addNotes(){
+		$this->m_notes->save();
+		redirect('Auth_controller/all');
+	}
+	public function do_edit($id){
+		$this->m_notes->update($id);
+		redirect('auth_controller/all');
+	}
+	public function do_delete($id){
+		$this->m_notes->delete($id);
+		redirect('auth_controller/all');
+	}
 	public function do_upload(){
 		$config['upload_path'] = '../assets/';
 		$config['allowed_types'] = '*';
 		$config['max_size'] = '2000000048';
 		$config['max_width'] = '2048' ;
 		$config['max_height'] = '4096';
-		$this->load->library('upload', $config);
-		if(!$this->upload->do_upload()){
-			$error =  array('error'=> $this->upload->display_errors())
-			$this ->load->view('Newnote_view', $error);
-		}else{
-			$_data = array('upload_data' => $this->upload-data());
-			$data = array(
-				'id'=>$user->id,
-				'authenticated'=>true, // Buat session authenticated dengan value true
-				'email'=>$user->Email,  // Buat session username
-			  );
-			  if () {
-				  # code...
-			  } else {
-				  # code...
-			  }
+		// $this->load->library('upload', $config);
+		// if(!$this->upload->do_upload()){
+		// 	$error =  array('error'=> $this->upload->display_errors())
+		// 	$this ->load->view('Newnote_view', $error);
+		// }else{
 			  
-		}
+		// }
 
 	}
 	

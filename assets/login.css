@@ -8,7 +8,7 @@
     font-family: 'Helvetica Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Helvetica Light'), url('../fonts/Helvetica/HelveticaNeueLight.woff') format('woff');
+    src: local('Helvetica Light'), url('../fonts/Helvetica/HelveticaNeue-Light.woff') format('woff');
 }
 input, body {
     font-family : 'Helvetica Roman';
