@@ -1,4 +1,17 @@
 ###################
+Recreate Gnotes Website
+###################
+1. Install Xampp
+
+2. use the XAMPP Control Panel to start/ stop all servers.
+
+3. Start Mysql and Apache servers.
+
+4. Extract downloaded zip folder into the xampp/htdocs folder. 
+
+5. Go to your browser and hit localhost/Gnotes. You will see below screen.
+
+###################
 What is CodeIgniter
 ###################
 
